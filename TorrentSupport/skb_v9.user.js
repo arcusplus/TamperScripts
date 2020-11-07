@@ -4,6 +4,23 @@ var readStep = 10;
 var interval = 300;
 var getGoogle = 9;
 
+
+function getFromTable() {
+    var counter = 0;
+    var line    = [];
+    $("table tbody tr").map(function(index, val){
+      line[counter] = {"date":$(val).children().eq(0).text()
+                  , "name":$(val).children().eq(1).text()
+                  , "price":$(val).children().eq(2).text()};
+      counter += 1;
+    });
+    
+    //配列形式
+    console.log(line);
+    //JSON形式
+    console.log(JSON.stringify(line));
+  }
+
 function ReadNext() {
     ReadImage(readStep);
 }
@@ -35,6 +52,8 @@ function getImageUrl_Imglink(text) {
 (function () {
     //add style sheet
     AddStyle();
+    
+    getFromTable();
 
     if (window.location.href.match(/view/)) {
 
