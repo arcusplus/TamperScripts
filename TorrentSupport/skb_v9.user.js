@@ -53,6 +53,7 @@ function getImageUrl_Imglink(text) {
     //add style sheet
     AddStyle();
     
+    debugger;
     getFromTable();
 
     if (window.location.href.match(/view/)) {
