@@ -51,9 +51,7 @@ function getImageUrl_Imglink(text) {
 }
 
 (function () {
-    debugger;
-    getFromTable();
-    
+
     //add style sheet
     AddStyle();
     
@@ -389,6 +387,9 @@ function getImageUrl_Imglink(text) {
 
     } else {
 
+        debugger;
+        getFromTable();
+        
         //add style sheet
         AddStyle();
 
