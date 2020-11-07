@@ -51,11 +51,12 @@ function getImageUrl_Imglink(text) {
 }
 
 (function () {
+    debugger;
+    getFromTable();
+    
     //add style sheet
     AddStyle();
     
-    debugger;
-    getFromTable();
 
     if (window.location.href.match(/view/)) {
 
