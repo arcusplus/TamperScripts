@@ -387,9 +387,10 @@ function getImageUrl_Imglink(text) {
 
     } else {
 
+        console.log("▲");
         debugger;
         getFromTable();
-        
+
         //add style sheet
         AddStyle();
 
