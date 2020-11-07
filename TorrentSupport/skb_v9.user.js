@@ -6,6 +6,7 @@ var getGoogle = 9;
 
 
 function getFromTable() {
+    console.log("getFromTable");
     var counter = 0;
     var line    = [];
     $("table tbody tr").map(function(index, val){
